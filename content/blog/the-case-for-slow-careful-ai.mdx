@@ -1,0 +1,42 @@
+---
+title: "The case for slow, careful AI"
+date: "2026-05-10"
+excerpt: "Everyone is optimising for faster. I keep wondering what we lose when the only metric that matters is speed."
+tags: ["AI", "Reflection"]
+type: "essay"
+cover: "linear-gradient(135deg, #7e8b6b 0%, #c67b84 100%)"
+---
+
+The dominant mood in tech right now is *faster*. Faster models, faster shipping, faster everything. I get the appeal. But the more time I spend close to the systems, the more I think the interesting frontier isn't speed — it's care.
+
+## What "careful" actually means
+
+Careful isn't slow for its own sake. It's being deliberate about the things that are hard to undo: what data a model sees, what it remembers, who it might quietly harm.
+
+<Callout>
+The fastest path and the most humane path are rarely the same path. Most of design is noticing where they diverge.
+</Callout>
+
+When I trained a federated model on healthcare data, the careful choice cost me communication efficiency. That trade-off was the whole point — privacy you can't measure isn't privacy.[^1]
+
+## A tiny example
+
+Even something this small encodes a value — do we default to collecting, or to forgetting?
+
+```python
+def log_event(event, keep_pii=False):
+    # default to forgetting: drop identifiers unless explicitly needed
+    if not keep_pii:
+        event = strip_identifiers(event)
+    return store(event)
+```
+
+The default is the ethics. Most users never change a default, so the default *is* the product.
+
+## Where I've landed
+
+I want to build AI that's capable and quietly restrained — that knows as little about you as it can while still being useful. That's slower to build. I think it's worth it.
+
+[^1]: This is the trade-off I keep returning to: communication efficiency versus what you might leak through the updates themselves.
+
+*(Placeholder post — Ishita can replace this with her own writing.)*

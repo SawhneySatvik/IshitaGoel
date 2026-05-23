@@ -1,0 +1,26 @@
+---
+title: "What federated learning taught me about trust"
+date: "2026-03-02"
+excerpt: "Privacy-preserving machine learning is usually framed as a maths problem. Spend enough time with it and it starts to feel like a trust problem."
+tags: ["AI", "Research"]
+type: "essay"
+cover: "linear-gradient(135deg, #c2693f 0%, #7e8b6b 100%)"
+---
+
+I spent a few months building a privacy-preserving federated-learning pipeline for healthcare data. The headline result was a number — 91% accuracy without ever centralising the data. But the thing I actually took away wasn't the number.
+
+## Learning without looking
+
+Federated learning flips the usual deal. Instead of gathering everyone's data into one place, the model travels to the data, learns locally, and sends back only what it learned — never the records themselves.
+
+> The most interesting constraint wasn't accuracy. It was: how little can the system know about a person and still be useful to them?
+
+That constraint is really about **trust**. A hospital doesn't hand over its patients' records on a promise; it shouldn't have to. The architecture itself becomes the promise.
+
+## The trade-off nobody escapes
+
+The honest part is that there's always tension — between how much you communicate each round and how much you might leak through those updates. You don't solve it; you choose where to sit on the curve, on purpose, and you're clear about it.
+
+I think that's the version of AI I want to keep working on: capable, but designed to know as little about people as it can get away with.
+
+*(Placeholder post — Ishita can replace this with her own writing.)*

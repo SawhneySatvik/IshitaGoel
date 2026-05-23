@@ -1,0 +1,34 @@
+---
+title: "Federated Learning in Modern Healthcare"
+kind: "Research · AI"
+period: "Nov 2024 — Apr 2025 · under Dr. Sivashankar G., SRM IST"
+summary: "How do you train a useful medical model without ever moving a patient's data off the device it lives on? This project built a privacy-preserving federated-learning pipeline to find out."
+tags: ["Research", "AI", "Sustainability"]
+stack: ["TensorFlow", "Federated Averaging", "Python"]
+---
+
+Healthcare data is some of the most sensitive data there is — and also some of the most valuable for building models that could genuinely help people. The tension between those two truths is the question this research set out to explore: **can we learn from data we're never allowed to centralise?**
+
+## The idea
+
+Federated learning flips the usual machine-learning setup on its head. Instead of collecting everyone's data into one place and training a model there, the model travels to the data. Each hospital, clinic, or device trains locally on its own records, and only the *learned updates* — never the raw data — are shared and averaged into a global model.
+
+> The patient's data never leaves the building. Only what the model learned from it does.
+
+## What I built
+
+I designed and implemented a privacy-preserving federated-learning pipeline in TensorFlow, simulating a network of decentralised clients each holding their own slice of healthcare data.
+
+- Trained a shared model using federated averaging across non-identical local datasets.
+- Reached **91% accuracy** on the decentralised setup — competitive with a centralised baseline, without ever pooling the data.
+- Studied the trade-offs between **communication efficiency** (how much we send each round) and **data security** (how much we risk leaking through the updates themselves).
+
+## Why it matters
+
+This is the part I care about most. Privacy-preserving ML isn't a niche technical trick — it's what makes responsible AI possible in places where the data is too sensitive to share: hospitals, clinics, personal devices. It's also quietly *sustainable*, cutting the constant shuttling of huge datasets across networks.
+
+It sits exactly where I want to work: at the intersection of capable machine learning and genuine care for the people behind the data.
+
+## Where I'd take it next
+
+The honest open questions — stronger differential-privacy guarantees on the shared updates, handling clients that drop in and out, and testing on real (not simulated) clinical distributions. That's the direction I'm carrying into my research at Deakin.

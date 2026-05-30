@@ -288,7 +288,7 @@ export const leadership: LeadershipItem[] = [
     href: "https://kaushalup.org",
     slug: "kaushal-up",
     tags: ["Leadership", "Sustainability"],
-    image: "/assets/images/IshitaAtAKaushalUpBookDistribution.png",
+    image: "/assets/images/IshitaAtAKaushalUpBookDistribution.jpg",
   },
   {
     role: "Student Coordinator",
@@ -297,7 +297,7 @@ export const leadership: LeadershipItem[] = [
     blurb:
       "Coordinated a 30+ member team to organise multiple successful campus events.",
     tags: ["Leadership"],
-    image: "/assets/images/IshitaAtMathClubEventStage.png",
+    image: "/assets/images/IshitaAtMathClubEventStage.jpg",
   },
 ];
 
@@ -339,7 +339,7 @@ export const gallery: GalleryItem[] = [
   {
     label: "Apple × Infosys iOS program",
     aspect: "2/3",
-    src: "/assets/images/IshitaInfosysInternshipCompletion.png",
+    src: "/assets/images/IshitaInfosysInternshipCompletion.jpg",
   },
   {
     label: "AI Summit India",
@@ -350,19 +350,19 @@ export const gallery: GalleryItem[] = [
   {
     label: "Receiving the award",
     aspect: "16/10",
-    src: "/assets/images/IshitaTakingAward.png",
+    src: "/assets/images/IshitaTakingAward.jpg",
   },
   { label: "UN SDG seminar", aspect: "4/3" },
   {
     label: "At a diversity event",
     aspect: "3/4",
-    src: "/assets/images/IshitaAtADiversityEvent.png",
+    src: "/assets/images/IshitaAtADiversityEvent.jpg",
   },
   { label: "In the studio", aspect: "1/1" },
   {
     label: "Candid",
     aspect: "13/10",
-    src: "/assets/images/IshitaCandid.png",
+    src: "/assets/images/IshitaCandid.jpg",
   },
   {
     label: "With a friend",
